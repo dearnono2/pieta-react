@@ -11,9 +11,9 @@ function Home() {
         <Header />
         {/* 바뀌는 내용물 */}
         <Routes>
-          <Route path="/" element={<Pieta />}></Route>
-          <Route path="/" element={<Function />}></Route>
-          <Route path="/" element={<SubSrp />}></Route>
+          <Route path="/Pieta" element={<Pieta />}></Route>
+          <Route path="/Function" element={<Function />}></Route>
+          <Route path="/SubSrp" element={<SubSrp />}></Route>
         </Routes>
       </BrowserRouter>
     </>
