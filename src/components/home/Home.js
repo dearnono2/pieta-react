@@ -3,6 +3,7 @@ import Header from "../common/Header";
 import Pieta from "../sub/Pieta";
 import Function from "../sub/Function";
 import SubSrp from "../sub/SubSrp";
+import Share from "./Share";
 
 function Home() {
   return (
@@ -16,6 +17,7 @@ function Home() {
           <Route path="/SubSrp" element={<SubSrp />}></Route>
         </Routes>
       </BrowserRouter>
+      <Share />
     </>
   );
 }
