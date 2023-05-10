@@ -1,7 +1,7 @@
 import React from "react";
 
 const SubSrp = () => {
-  return <div>SubSrp</div>;
+  return <div></div>;
 };
 
 export default SubSrp;

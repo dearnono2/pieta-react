@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 
@@ -8,7 +7,7 @@ function Share() {
 
   return (
     
-    <ShareContent>
+    <ShareSection>
       <div className="txt-container">
         <div className="moving-txt">
           <div className="txt-box">
@@ -32,11 +31,11 @@ function Share() {
           <img src="./images/mo.png" alt="mobile" />
         </div>
       </div>
-    </ShareContent>
+    </ShareSection>
   )
 }
 
-const ShareContent = styled.section`
+const ShareSection = styled.section`
 position: relative;
     width: 100%;
     height: 100vh;
@@ -144,4 +143,4 @@ position: relative;
 
 `
 
-export default Share
+export default Share;

@@ -1,7 +1,7 @@
 import React from "react";
 
 const Pieta = () => {
-  return <div>Pieta</div>;
+  return <div></div>;
 };
 
 export default Pieta;

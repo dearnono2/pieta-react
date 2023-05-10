@@ -53,7 +53,7 @@ const HeaderContent = styled.header`
   top: 0;
   left: 0;
   right: 0;
-  height: 60px;
+  /* height: 60px; */
   padding: 20px 50px;
   background-color: rgba(255, 255, 255, 0.65);
   z-index: 20;
