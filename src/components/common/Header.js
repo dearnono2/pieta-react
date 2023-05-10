@@ -19,7 +19,7 @@ const Header = (props) => {
   ];
 
   return (
-    <HeaderContent>
+    <Wrapper>
     <div className="container">
       <h1>
         <Link to="/">
@@ -43,12 +43,12 @@ const Header = (props) => {
         </ul>
       </div>
     </div>
-  </HeaderContent>
+  </Wrapper>
   )
 
 };
 
-const HeaderContent = styled.header`
+const Wrapper = styled.header`
   position: fixed;
   top: 0;
   left: 0;

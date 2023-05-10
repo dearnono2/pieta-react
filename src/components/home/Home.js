@@ -1,4 +1,5 @@
 import Header from "../common/Header"
+import Footer from "../common/Footer";
 import Share from "./Share";
 import Func from "./Func";
 import Srp from "./Srp";
@@ -13,6 +14,7 @@ function Home() {
       <Func />
       <Srp />
       <DownApp />
+      <Footer />
     </>
   );
 }
