@@ -1,8 +1,26 @@
 import React from 'react'
+import { useRef, useLayoutEffect } from 'react';
 import styled from 'styled-components';
-
+import { gsap } from 'gsap';
 
 function Share() {
+  // gsap
+  const el = useRef();
+  const tl = useRef();
+
+  useLayoutEffect(() => {
+    const ctx = gsap.context(() => {
+      tl.current = gsap
+        .timeline()
+        .from("item", {
+          duration: 0.5,
+          opacity: 0,
+          y: 100,
+        })
+    }, el);
+  }, []);
+
+
   const images = ['00','01','02','03','04','05','06','07','08','09','10'];
 
   return (
@@ -21,11 +39,11 @@ function Share() {
         {/* 왜 Link를 사용하면 에러가 뜰까? */}
         {/* <Link to="/">자세히보기</Link> */}
       </div>
-      <div className="img-container">
+      <div className="img-container" ref={el}>
         {images.map((v, i) => (
-          <div className={`img art${v}`} key={i}>
+          <item className={`img art${v}`} key={i}>
             <img src={`./images/a${v}.png`} alt={`art${i}`} />
-          </div>
+          </item>
         ))}
         <div className="img mobile">
           <img src="./images/mo.png" alt="mobile" />
@@ -36,10 +54,10 @@ function Share() {
 }
 
 const ShareSection = styled.section`
-position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
   .txt-container {
     display: flex;
     flex-direction: column;
